@@ -6,8 +6,11 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import org.eclipse.persistence.annotations.CascadeOnDelete;
+
 @Entity
 @Table(name="songs")
+@CascadeOnDelete
 public class Song {
 	
 	// Variables
